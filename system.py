@@ -31,8 +31,8 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pickle.load(open('C:/Users/zepha/Movie Recommender System Project Compu Simu/movie_list.pkl','rb'))
-similarity = pickle.load(open('C:/Users/zepha/Movie Recommender System Project Compu Simu/similarity.pkl','rb'))
+movies = pickle.load(open('./Users/zepha/Movie Recommender System Project Compu Simu/movie_list.pkl','rb'))
+similarity = pickle.load(open('./Users/zepha/Movie Recommender System Project Compu Simu/similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
